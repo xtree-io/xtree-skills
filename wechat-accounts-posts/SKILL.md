@@ -40,3 +40,10 @@ Python：`client.wechat.accounts.posts(account_id=..., page=1)`（以 SDK 为准
 ## 输出
 
 返回原始列表字段 + `meta` 费用。禁止编造未返回的阅读数。
+
+## Call
+
+- Access: the MCP tool names in this file, or the Python SDK (`pip install "git+https://github.com/xtree-io/xtree-python.git"`).
+- Auth: `XTREE_API_KEY` (request header `X-XTREE-Key`).
+- Pagination: follow this file. Do not invent a cursor or session the response did not return.
+- Billing: each call debits the user's wallet. Incomplete delivery is not billed. On 401 or insufficient balance, send the user to https://www.xtree.io. Do not use another key.

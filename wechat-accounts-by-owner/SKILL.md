@@ -38,3 +38,10 @@ description: >-
 ## 输出
 
 返回原始账号字段 + 费用 meta。禁止编造粉丝数。
+
+## Call
+
+- Access: the MCP tool names in this file, or the Python SDK (`pip install "git+https://github.com/xtree-io/xtree-python.git"`).
+- Auth: `XTREE_API_KEY` (request header `X-XTREE-Key`).
+- Pagination: follow this file. Do not invent a cursor or session the response did not return.
+- Billing: each call debits the user's wallet. Incomplete delivery is not billed. On 401 or insufficient balance, send the user to https://www.xtree.io. Do not use another key.

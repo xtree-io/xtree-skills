@@ -2,14 +2,14 @@
 
 面向 Cursor / Claude 等宿主的**可复制 SKILL 包**：教 Agent 如何用 XTREE **取原始数据**，**不**做选题、文案、爆款或运营结论。
 
-底层走 [xtree-mcp](https://github.com/xtree-io/xtree-mcp) 或 REST；计费仍是顾客自己的 Key + 钱包，按次扣费。残缺交付不计费。单价见 [API 目录](https://www.xtree.io/catalog)。
+微信搜索、视频号、阅读数、历史发文、文章库可以走 [xtree-mcp](https://github.com/xtree-io/xtree-mcp)。其余技能走 REST 或 [Python SDK](https://github.com/xtree-io/xtree-python)。公开的 MCP 还没有这些平台的工具。计费仍是顾客自己的 Key + 钱包，按次扣费。残缺交付不计费。单价见 [API 目录](https://www.xtree.io/catalog)。
 
 官网索引：https://www.xtree.io/skills （含搜索 / 分类 / **真实用量**）。
 
 ## 安装前提
 
 1. 在 [xtree.io](https://www.xtree.io/login?tab=signup) 注册并拿到 `XTREE_API_KEY`
-2. 配置 MCP（推荐）：
+2. 微信技能可配置 MCP。其他技能用 REST，或安装 Python SDK：`pip install "git+https://github.com/xtree-io/xtree-python.git"`
 
 ```json
 {
@@ -58,7 +58,7 @@
 | [taobao-item-search](taobao-item-search/) | 淘宝商品搜索 |
 | [video-download](video-download/) | 视频下载解析 |
 
-门户「社媒搜索」见 https://www.xtree.io/search（非本仓 SKILL 包）。
+门户能力见 https://www.xtree.io/catalog （非本仓 SKILL 包）。
 
 ## 原则
 
