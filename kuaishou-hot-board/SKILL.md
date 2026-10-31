@@ -6,13 +6,13 @@ description: >-
 
 # XTREE · 快手热榜
 
-用顾客自己的 XTREE API Key，通过 MCP / REST 拉取**原始数据**。不要生成标题、不要做爆款分析。
+用顾客自己的 XTREE API Key，通过 REST 或 Python SDK 拉取**原始数据**。公开的 MCP 目前只注册微信工具，本技能不在其中。不要生成标题、不要做爆款分析。
 
 官网详情：https://www.xtree.io/skills/kuaishou-hot-board
 
 ## 前置
 
-- 已配置 MCP `xtree`（见仓库 README），环境变量 `XTREE_API_KEY`
+- 环境变量 `XTREE_API_KEY`。Python：`pip install "git+https://github.com/xtree-io/xtree-python.git"`，或调用 REST `https://api.xtree.io/api`
 - 钱包有余额；单价见 https://www.xtree.io/catalog
 
 ## 计费 slug
@@ -30,3 +30,10 @@ description: >-
 ## 输出给用户
 
 只给结构化字段与费用 meta；结论与运营建议留给用户自己写。
+
+## Call
+
+- Access: REST `https://api.xtree.io/api` or the Python SDK (`pip install "git+https://github.com/xtree-io/xtree-python.git"`). This skill is not an MCP tool. The public MCP server currently registers WeChat tools only.
+- Auth: `XTREE_API_KEY` (request header `X-XTREE-Key`).
+- Slugs: `kuaishou.hot.board`
+- Billing: each call debits the user's wallet. Incomplete delivery is not billed. On 401 or insufficient balance, send the user to https://www.xtree.io. Do not use another key.

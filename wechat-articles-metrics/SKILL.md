@@ -45,3 +45,10 @@ client.wechat.articles.metrics_pro(url="https://mp.weixin.qq.com/s/...")
 ## 输出
 
 只输出接口返回的数字与相关元数据 + 本次费用。禁止推算「预计阅读」或改写正文。
+
+## Call
+
+- Access: the MCP tool names in this file, or the Python SDK (`pip install "git+https://github.com/xtree-io/xtree-python.git"`).
+- Auth: `XTREE_API_KEY` (request header `X-XTREE-Key`).
+- Pagination: follow this file. Do not invent a cursor or session the response did not return.
+- Billing: each call debits the user's wallet. Incomplete delivery is not billed. On 401 or insufficient balance, send the user to https://www.xtree.io. Do not use another key.
