@@ -9,7 +9,7 @@
 ## 安装前提
 
 1. 在 [xtree.io](https://www.xtree.io/login?tab=signup) 注册并拿到 `XTREE_API_KEY`
-2. 微信技能可配置 MCP。其他技能用 REST，或安装 Python SDK：`pip install "git+https://github.com/xtree-io/xtree-python.git"`
+2. 微信技能可配置 MCP。其他技能用 REST，或安装 Python SDK：`pip install xtree-sdk`
 
 ```json
 {

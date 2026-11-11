@@ -12,7 +12,7 @@ description: >-
 
 ## 前置
 
-- 环境变量 `XTREE_API_KEY`。Python：`pip install "git+https://github.com/xtree-io/xtree-python.git"`，或调用 REST `https://api.xtree.io/api`
+- 环境变量 `XTREE_API_KEY`。Python：`pip install xtree-sdk`，或调用 REST `https://api.xtree.io/api`
 - 钱包有余额；单价见 https://www.xtree.io/catalog
 
 ## 计费 slug
@@ -34,7 +34,7 @@ description: >-
 
 ## Call
 
-- Access: REST `https://api.xtree.io/api` or the Python SDK (`pip install "git+https://github.com/xtree-io/xtree-python.git"`). This skill is not an MCP tool. The public MCP server currently registers WeChat tools only.
+- Access: REST `https://api.xtree.io/api` or the Python SDK (`pip install xtree-sdk`). This skill is not an MCP tool. The public MCP server currently registers WeChat tools only.
 - Auth: `XTREE_API_KEY` (request header `X-XTREE-Key`).
 - Slugs: `tiktok.search.videos`, `tiktok.search.users`
 - Billing: each call debits the user's wallet. Incomplete delivery is not billed. On 401 or insufficient balance, send the user to https://www.xtree.io. Do not use another key.
