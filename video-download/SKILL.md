@@ -23,7 +23,7 @@ description: >-
 | `tiktok.videos.download` |
 | `bilibili.videos.download` |
 | `youtube.videos.download` |
-| `wechat.channels.feed.download` |
+| `wechat.channels.feeds.download` |
 
 ## 失败与计费
 
@@ -39,5 +39,5 @@ description: >-
 
 - Access: REST `https://api.xtree.io/api` or the Python SDK (`pip install xtree-sdk`). This skill is not an MCP tool. The public MCP server currently registers WeChat tools only.
 - Auth: `XTREE_API_KEY` (request header `X-XTREE-Key`).
-- Slugs: `douyin.videos.download`, `tiktok.videos.download`, `bilibili.videos.download`, `youtube.videos.download`, `wechat.channels.feed.download`
+- Slugs: `douyin.videos.download`, `tiktok.videos.download`, `bilibili.videos.download`, `youtube.videos.download`, `wechat.channels.feeds.download`
 - Billing: each call debits the user's wallet. Incomplete delivery is not billed. On 401 or insufficient balance, send the user to https://www.xtree.io. Do not use another key.

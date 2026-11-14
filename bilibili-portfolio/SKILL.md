@@ -19,7 +19,6 @@ description: >-
 
 | slug |
 |------|
-| `bilibili.users.videos` |
 | `bilibili.users.posts` |
 | `bilibili.users.profile` |
 
@@ -37,5 +36,5 @@ description: >-
 
 - Access: REST `https://api.xtree.io/api` or the Python SDK (`pip install xtree-sdk`). This skill is not an MCP tool. The public MCP server currently registers WeChat tools only.
 - Auth: `XTREE_API_KEY` (request header `X-XTREE-Key`).
-- Slugs: `bilibili.users.videos`, `bilibili.users.posts`, `bilibili.users.profile`
+- Slugs: `bilibili.users.posts`, `bilibili.users.profile`
 - Billing: each call debits the user's wallet. Incomplete delivery is not billed. On 401 or insufficient balance, send the user to https://www.xtree.io. Do not use another key.

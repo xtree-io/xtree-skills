@@ -20,9 +20,9 @@ description: >-
 | slug |
 |------|
 | `wechat.articles.comments` |
-| `wechat.articles.comment-replies` |
+| `wechat.articles.sub-comments` |
 | `wechat.channels.comments` |
-| `wechat.channels.comment-replies` |
+| `wechat.channels.sub-comments` |
 
 ## 失败与计费
 
@@ -38,5 +38,5 @@ description: >-
 
 - Access: REST `https://api.xtree.io/api` or the Python SDK (`pip install xtree-sdk`). This skill is not an MCP tool. The public MCP server currently registers WeChat tools only.
 - Auth: `XTREE_API_KEY` (request header `X-XTREE-Key`).
-- Slugs: `wechat.articles.comments`, `wechat.articles.comment-replies`, `wechat.channels.comments`, `wechat.channels.comment-replies`
+- Slugs: `wechat.articles.comments`, `wechat.articles.sub-comments`, `wechat.channels.comments`, `wechat.channels.sub-comments`
 - Billing: each call debits the user's wallet. Incomplete delivery is not billed. On 401 or insufficient balance, send the user to https://www.xtree.io. Do not use another key.
