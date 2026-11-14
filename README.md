@@ -51,7 +51,6 @@
 | [weibo-hot-search](weibo-hot-search/) | 微博热搜 |
 | [bilibili-search](bilibili-search/) | B站搜索 |
 | [bilibili-portfolio](bilibili-portfolio/) | B站账号作品集 |
-| [bilibili-rank](bilibili-rank/) | B站排行与热门 |
 | [tiktok-search](tiktok-search/) | TikTok 搜索 |
 | [tiktok-user-posts](tiktok-user-posts/) | TikTok 用户作品 |
 | [youtube-channel](youtube-channel/) | YouTube 频道作品 |
